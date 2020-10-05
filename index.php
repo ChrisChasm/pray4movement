@@ -31,7 +31,7 @@
 
 </head>
 
-<body id="top" style="color:white;">
+<body id="top">
 
 <?php
 $page = get_page_by_title( 'Home', ARRAY_A, 'page' );
