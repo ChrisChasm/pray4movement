@@ -1,3 +1,16 @@
+<?php
+global $post;
+
+if ( isset( $post->ID ) ) {
+    $title = get_post_meta( $post->ID, 'title', true );
+    $description = get_post_meta( $post->ID, 'description', true );
+} else {
+    $title = 'Pray4Movement';
+    $description = 'Praying for a disciple making movement.';
+}
+
+
+?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
@@ -5,9 +18,9 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Pray4Colorado</title>
-    <meta name="description" content="Praying for a disciple making movement in Colorado.">
-    <meta name="author" content="Pray4Colorado.org">
+    <title><?php echo esc_html( $title )  ?></title>
+    <meta name="description" content="<?php echo esc_html( $description )  ?>">
+    <meta name="author" content="<?php echo esc_html( $title )  ?>">
 
     <!-- mobile specific metas
     ================================================== -->
