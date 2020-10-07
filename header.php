@@ -12,7 +12,7 @@
   <html class="no-js"  <?php language_attributes(); ?>>
 
     <head>
-        
+
         <meta charset="utf-8">
 
         <!-- Force IE to use the latest rendering engine available -->
