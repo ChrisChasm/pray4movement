@@ -1626,7 +1626,7 @@ input::-moz-focus-inner {
   }
 
   .header-logo {
-    left: 30px;
+    /*left: 30px;*/
   }
   .header-logo img {
     width: 180px;
