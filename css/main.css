@@ -1612,7 +1612,7 @@ input::-moz-focus-inner {
 }
 @media only screen and (max-width: 800px) {
   .header-logo {
-    left: 40px;
+    left: 5px !important;
   }
 
   .header-menu-toggle {
@@ -1626,7 +1626,7 @@ input::-moz-focus-inner {
   }
 
   .header-logo {
-    /*left: 30px;*/
+    left: 5px !important;
   }
   .header-logo img {
     width: 180px;
@@ -1649,7 +1649,7 @@ input::-moz-focus-inner {
   }
 
   .header-logo {
-    left: 25px;
+    left: 5px !important;
   }
   .header-logo img img {
     width: 141px;
