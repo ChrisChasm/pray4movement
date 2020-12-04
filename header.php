@@ -12,6 +12,15 @@
   <html class="no-js"  <?php language_attributes(); ?>>
 
     <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3XJYWF723F"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-3XJYWF723F');
+        </script>
 
         <meta charset="utf-8">
 
