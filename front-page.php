@@ -737,7 +737,7 @@ $content = get_option('landing_content');
 
                 <div class="testimonials__slide">
                     <img src="/wp-content/themes/pray4movement/images/user-02.jpg" alt="Author image" class="testimonials__avatar">
-                    <p>If we never pray for movement in Indiana, do we have the right to complain when it isn't happening?</p>
+                    <p>If we never pray for movement in <?php echo esc_html( $content['location'] ?? '' ) ?>, do we have the right to complain when it isn't happening?</p>
                     <div class="testimonials__author">
                         Dave ~
                         <span>Pastor</span>
