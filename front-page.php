@@ -86,7 +86,7 @@ $content = get_option('landing_content');
             <?php echo esc_html( $content['title'] ?? '' ) ?>
         </a>
     </div> <!-- end header-logo -->
-
+    <nav class="header-nav">
 
         <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
 
@@ -99,7 +99,7 @@ $content = get_option('landing_content');
                 <li><a class="smoothscroll" href="#values" title="our-plan">Values</a></li>
                 <li><a class="smoothscroll" href="#contact" title="contact">Join Us</a></li>
                 <?php if( $content['sample_section'] ?? 'yes' === 'yes' ) : ?>
-                <li><a class="smoothscroll" href="#works" title="works">Samples</a></li>
+                    <li><a class="smoothscroll" href="#works" title="works">Samples</a></li>
                 <?php endif; ?>
             </ul>
 
@@ -109,25 +109,25 @@ $content = get_option('landing_content');
 
             <ul class="header-nav__social">
                 <?php if( ! empty( $content['facebook_url'] ?? '') ) : ?>
-                <li>
-                    <a href="<?php echo esc_html( $content['facebook_url'] ?? '' ) ?>" target="_blank" rel="noreferrer noopener"><i class="fab fa-facebook"></i></a>
-                </li>
+                    <li>
+                        <a href="<?php echo esc_html( $content['facebook_url'] ?? '' ) ?>" target="_blank" rel="noreferrer noopener"><i class="fab fa-facebook"></i></a>
+                    </li>
                 <?php endif; ?>
                 <?php if( ! empty( $content['twitter_url'] ?? '') ) : ?>
-                <li>
-                    <a href="<?php echo esc_html( $content['twitter_url'] ?? '' ) ?>" target="_blank" rel="noreferrer noopener"><i class="fab fa-twitter"></i></a>
-                </li>
+                    <li>
+                        <a href="<?php echo esc_html( $content['twitter_url'] ?? '' ) ?>" target="_blank" rel="noreferrer noopener"><i class="fab fa-twitter"></i></a>
+                    </li>
                 <?php endif; ?>
                 <?php if( ! empty( $content['instagram_url'] ?? '') ) : ?>
-                <li>
-                    <a href="<?php echo esc_html( $content['instagram_url'] ?? '' ) ?>" target="_blank" rel="noreferrer noopener"><i class="fab fa-instagram"></i></a>
-                </li>
+                    <li>
+                        <a href="<?php echo esc_html( $content['instagram_url'] ?? '' ) ?>" target="_blank" rel="noreferrer noopener"><i class="fab fa-instagram"></i></a>
+                    </li>
                 <?php endif; ?>
             </ul>
 
         </div> <!-- end header-nav__content -->
 
-    </nav> <!-- end header-nav -->
+    </nav>
 
     <a class="header-menu-toggle" href="#0">
         <span class="header-menu-icon"></span>
