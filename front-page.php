@@ -315,11 +315,11 @@ $content = get_option('landing_content');
         </div>
         <div class="col-block stats__col">
             <div class="stats__count"><?php echo esc_html( $content['stats_trainings'] ?? '0' ) ?></div>
-            <h5>Trainings Needed</h5>
+            <h5>New Trainings Needed</h5>
         </div>
         <div class="col-block stats__col">
             <div class="stats__count"><?php echo esc_html( $content['stats_churches'] ?? '0' ) ?></div>
-            <h5>Churches Needed</h5>
+            <h5>New Churches Needed</h5>
         </div>
 
     </div> <!-- end stats -->
